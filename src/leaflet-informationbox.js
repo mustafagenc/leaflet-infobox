@@ -13,7 +13,7 @@
     }
 })(function (L) {
 
-    L.InfoBox = L.Control.extend({
+    L.informationbox = L.Control.extend({
         options: {
             position: 'bottomleft'
         },
@@ -22,7 +22,7 @@
             L.Util.setOptions(this, options);
         },
         onAdd: function (map) {
-            this.div = L.DomUtil.create('div', 'leaflet-infobox-container');
+            this.div = L.DomUtil.create('div', 'leaflet-informationbox-container');
             if (this.innerHTML) {
                 this.div.innerHTML = this.innerHTML;
             }
@@ -33,13 +33,13 @@
         }
     });
 
-    L.infoBox = function (options) {
-        return new L.InfoBox(options);
+    L.informationbox = function (options) {
+        return new L.informationbox(options);
     };
 
-    L.infoBox = function (options, content) {
-        return new L.InfoBox(options, content);
+    L.informationbox = function (options, content) {
+        return new L.informationbox(options, content);
     };
 
-    return L.InfoBox;
+    return L.informationbox;
 });

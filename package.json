@@ -1,15 +1,14 @@
 {
-  "name": "leaflet-infobox",
+  "name": "leaflet-informationbox",
   "version": "0.0.1",
   "description": "Leaflet information box plugin",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mustafagenc/leaflet-infobox.git"
+    "url": "git+ssh://git@github.com/mustafagenc/leaflet-informationbox.git"
   },
   "keywords": [
     "leaflet",
-    "map",
-    "infobox"
+    "map"
   ],
   "author": {
     "name": "Mustafa Genc",
@@ -18,11 +17,11 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mustafagenc/leaflet-infobox/issues"
+    "url": "https://github.com/mustafagenc/leaflet-informationbox/issues"
   },
-  "homepage": "https://github.com/mustafagenc/leaflet-infobox#readme",
-  "main": "dist/leaflet-infobox.src.js",
-  "style": "dist/leaflet-infobox.src.css",
+  "homepage": "https://github.com/mustafagenc/leaflet-informationbox#readme",
+  "main": "dist/leaflet-informationbox.src.js",
+  "style": "dist/leaflet-informationbox.src.css",
   "dependencies": {
     "leaflet": "*"
   },

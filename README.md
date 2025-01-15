@@ -1,2 +1,2 @@
-# leaflet-infobox
+# leaflet-informationbox
 Leaflet Information Box

@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         meta: {
             banner:
                 '/* \n' +
-                ' * Leaflet InfoBox v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> \n' +
+                ' * Leaflet Information Box v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> \n' +
                 ' * \n' +
                 ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %> \n' +
                 ' * <%= pkg.author.email %> \n' +
@@ -61,8 +61,8 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'dist/leaflet-infobox.src.js': ['src/leaflet-infobox.js'],
-                    'dist/leaflet-infobox.src.css': ['src/leaflet-infobox.css']
+                    'dist/leaflet-informationbox.src.js': ['src/leaflet-informationbox.js'],
+                    'dist/leaflet-informationbox.src.css': ['src/leaflet-informationbox.css']
                 }
             }
         },
@@ -72,14 +72,14 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'dist/leaflet-infobox.min.js': ['dist/leaflet-infobox.src.js']
+                    'dist/leaflet-informationbox.min.js': ['dist/leaflet-informationbox.src.js']
                 }
             }
         },
         cssmin: {
             combine: {
                 files: {
-                    'dist/leaflet-infobox.min.css': ['src/leaflet-infobox.css']
+                    'dist/leaflet-informationbox.min.css': ['src/leaflet-informationbox.css']
                 }
             },
             options: {
@@ -89,7 +89,7 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'dist/',
                 files: {
-                    'dist/leaflet-infobox.min.css': ['src/leaflet-infobox.css']
+                    'dist/leaflet-informationbox.min.css': ['src/leaflet-informationbox.css']
                 }
             }
         },

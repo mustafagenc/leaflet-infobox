@@ -1,5 +1,5 @@
 /* 
- * Leaflet InfoBox v0.0.6 - 2025-01-15 
+ * Leaflet Information Box v0.0.1 - 2025-01-15 
  * 
  * Copyright 2025 Mustafa Genc 
  * eposta@mustafagenc.info 
@@ -8,10 +8,10 @@
  * Licensed under the MIT license. 
  * 
  * Demo: 
- * https://github.com/mustafagenc/leaflet-infobox#readme 
+ * https://github.com/mustafagenc/leaflet-informationbox#readme 
  * 
  * Source: 
- * git+ssh://git@github.com/mustafagenc/leaflet-infobox.git 
+ * git+ssh://git@github.com/mustafagenc/leaflet-informationbox.git 
  * 
  */
 (function (factory) {
@@ -29,7 +29,7 @@
     }
 })(function (L) {
 
-    L.InfoBox = L.Control.extend({
+    L.informationbox = L.Control.extend({
         options: {
             position: 'bottomleft'
         },
@@ -38,7 +38,7 @@
             L.Util.setOptions(this, options);
         },
         onAdd: function (map) {
-            this.div = L.DomUtil.create('div', 'leaflet-infobox-container');
+            this.div = L.DomUtil.create('div', 'leaflet-informationbox-container');
             if (this.innerHTML) {
                 this.div.innerHTML = this.innerHTML;
             }
@@ -49,13 +49,13 @@
         }
     });
 
-    L.infoBox = function (options) {
-        return new L.InfoBox(options);
+    L.informationbox = function (options) {
+        return new L.informationbox(options);
     };
 
-    L.infoBox = function (options, content) {
-        return new L.InfoBox(options, content);
+    L.informationbox = function (options, content) {
+        return new L.informationbox(options, content);
     };
 
-    return L.InfoBox;
+    return L.informationbox;
 });

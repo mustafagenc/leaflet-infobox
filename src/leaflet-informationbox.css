@@ -1,4 +1,4 @@
-.leaflet-infobox-container {
+.leaflet-informationbox-container {
     padding: 5px 10px;
     background: rgba(255, 255, 255, 0.5);
     color: #1f1f1f;
@@ -6,6 +6,6 @@
     line-height: 18px;
 }
 
-.leaflet-infobox-container:empty {
+.leaflet-informationbox-container:empty {
     display: none;
 }
