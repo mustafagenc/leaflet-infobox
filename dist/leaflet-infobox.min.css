@@ -1,0 +1,18 @@
+/* 
+ * Leaflet InfoBox v0.0.6 - 2025-01-15 
+ * 
+ * Copyright 2025 Mustafa Genc 
+ * eposta@mustafagenc.info 
+ * https://mustafagenc.info 
+ * 
+ * Licensed under the MIT license. 
+ * 
+ * Demo: 
+ * https://github.com/mustafagenc/leaflet-infobox#readme 
+ * 
+ * Source: 
+ * git+ssh://git@github.com/mustafagenc/leaflet-infobox.git 
+ * 
+ */
+
+.leaflet-infobox-container{padding:5px 10px;background:rgba(255,255,255,.5);color:#1f1f1f;font-size:12px;line-height:18px}.leaflet-infobox-container:empty{display:none}
