@@ -1,5 +1,5 @@
 /* 
- * Leaflet Information Box v0.0.1 - 2025-01-15 
+ * Leaflet Information Box v0.0.4 - 2025-01-16 
  * 
  * Copyright 2025 Mustafa Genc 
  * eposta@mustafagenc.info 
@@ -29,7 +29,7 @@
     }
 })(function (L) {
 
-    L.informationbox = L.Control.extend({
+    L.InformationBox = L.Control.extend({
         options: {
             position: 'bottomleft'
         },
@@ -49,13 +49,9 @@
         }
     });
 
-    L.informationbox = function (options) {
-        return new L.informationbox(options);
+    L.informationBox = function (options, content) {
+        return new L.InformationBox(options, content);
     };
 
-    L.informationbox = function (options, content) {
-        return new L.informationbox(options, content);
-    };
-
-    return L.informationbox;
+    return L.InformationBox;
 });
