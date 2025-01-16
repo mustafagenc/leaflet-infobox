@@ -13,7 +13,7 @@
     }
 })(function (L) {
 
-    L.InformationBox = L.Control.extend({
+    L.Control.InformationBox = L.Control.extend({
         options: {
             position: 'bottomleft'
         },
@@ -33,9 +33,13 @@
         }
     });
 
-    L.informationBox = function (options, content) {
-        return new L.InformationBox(options, content);
+    L.control.informationBox = function (options) {
+        return new L.Control.InformationBox(options);
     };
 
-    return L.InformationBox;
+    L.control.informationBox = function (options, content) {
+        return new L.Control.InformationBox(options, content);
+    };
+    
+    return L.Control.InformationBox;
 });
