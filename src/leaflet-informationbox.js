@@ -33,10 +33,6 @@
         }
     });
 
-    L.informationBox = function (options) {
-        return new L.InformationBox(options);
-    };
-
     L.informationBox = function (options, content) {
         return new L.InformationBox(options, content);
     };
